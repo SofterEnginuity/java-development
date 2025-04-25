@@ -19,7 +19,6 @@ public class Employee {
 
 
     public int getEmployeeID() {
-
         return employeeID;
     }
 
@@ -50,7 +49,7 @@ public class Employee {
     public void setPayRate(double payRate) {
         this.payRate = payRate;
     }
-    public double grossPay(){
+    public double getGrossPay(){
 
         return hoursWorked * payRate;
     }
