@@ -8,11 +8,11 @@ public class Main {
 //        System.out.println("Please enter your desired number of beds.");
 //        int beds = scanner.nextInt();
 
-Room room1 = new Room(2,129.99,false);
-        System.out.println(room1.getPrice());
+        Room room1 = new Room(2, 129.99, false);
+
+        Reservation reservation1 = new Reservation("king", 169.99, 3, true);
+
+        Employee employee1 = new Employee(15245, "angel", "IT", 17.50, 39);
 
     }
-Reservation reservation1 = new Reservation("king", 169.99,3,true);
-
-
 }

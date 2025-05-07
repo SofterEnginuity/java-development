@@ -58,8 +58,10 @@ public class Reservation {
     }
 
     public double getReservationTotal() {
-        return price * numberOfNights;
-        if (isWeekend) {
+
+        if (!isWeekend) {
+            return price * numberOfNights;
+        } else{
             return price *= 1.1;
         }
     }
