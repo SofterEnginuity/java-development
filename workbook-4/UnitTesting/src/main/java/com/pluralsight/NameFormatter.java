@@ -40,6 +40,30 @@ public class NameFormatter {
         String mainPart = parts[0];
         //if there is more than one part, the suffix is part 1, if not, set suffix to nothing
         String suffix = parts.length > 1 ? parts[1] : "";
+
+
+        String[] nameParts = mainPart.split(" ");
+        String prefix = "", firstName = "", middleName = "", lastName = "";
+
+//you will check on the length to know what case you are in to return the formatted name based on what was entered by the user
+       switch (nameParts.length){
+           case 4:
+               prefix = nameParts[0];
+               firstName = nameParts[1];
+               middleName = nameParts[2];
+               lastName = nameParts[3];
+               break;
+           case 3 :
+               firstName = nameParts[0];
+               middleName = nameParts[1];
+               lastName = nameParts[2];
+               break;
+           case 2:
+               firstName = nameParts[0];
+               lastName =nameParts[1];
+               break;
+       }
+    return format(prefix,firstName,middleName,lastName,suffix);
     }
 
 }
