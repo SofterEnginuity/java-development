@@ -1,0 +1,7 @@
+-- 1.) 
+-- use northwind;
+-- SELECT p.ProductID, p.ProductName, p.UnitPrice, CategoryName
+-- FROM Products p
+-- JOIN Categories c
+-- ON c.CategoryID
+-- ORDER BY CategoryName, ProductName;
